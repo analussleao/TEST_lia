@@ -14,4 +14,6 @@ WHERE
     C.Nome LIKE 'data%'
 GROUP BY 
     -- Agrupa os dados por nome da escola e data de matrícula.
-    E.Nome, ES.Data_Matricula;
+    E.Nome, ES.Data_Matricula
+ORDER BY 
+    ES.Data_Matricula DESC;
